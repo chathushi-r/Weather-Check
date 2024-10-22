@@ -6,6 +6,7 @@ Project Status: Development of this app is currently in progress. (This is not t
 Features
 - Current weather information : Displays current temperature, humidity, wind speed and weather conditions (clear skies, cloudy).
 - Country/City selection: Allows users to easily select from a predefined list of countries and cities.
+
 (More features to be added soon)
 
 Technologies used:
