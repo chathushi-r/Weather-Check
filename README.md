@@ -3,7 +3,7 @@ A weather app that provides users with the current forecast details for their se
 
 Project Status: Development of this app is currently in progress. (This is not the final design.)
 
-Features
+Features:
 - Current weather information : Displays current temperature, humidity, wind speed and weather conditions (clear skies, cloudy).
 - Country/City selection: Allows users to easily select from a predefined list of countries and cities.
 
