@@ -1,4 +1,4 @@
-export default{
+const countryList = {
     "countryInfo" : {
         "countries": [
             {
@@ -23,3 +23,5 @@ export default{
         ]
     }
 }
+
+export default countryList
