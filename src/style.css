@@ -30,12 +30,21 @@ body{
     margin: 20px;
 }
 
+.main-headings{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
 .country-city-input{
     padding: 40px;
     flex: 1;
-    height: 75vh;
+    height: 76vh;
     background: linear-gradient(rgba(22, 20, 20, 0.494) 20%, rgba(128, 128, 128, 0.448) 70%);
     border-radius: 20px;
+    text-align: center;
 }
 
 .weather-display-card{
@@ -46,17 +55,12 @@ body{
     border-radius: 20px;
 }
 
-.country-city-input h1{
-    font-size: 2.6rem;
-}
-
 .main--title--top{
     color: white;
 }
 
 .main--title--bottom{
-    margin-top: 35px;
-    margin-left:250px;
+    margin-left:auto;
     color: rgb(0, 0, 255);
 }
 
@@ -67,13 +71,21 @@ select{
     color: rgba(0, 0, 0, 0.849);
 }
 
+select:disabled{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 0.849);
+    background-color: rgba(128, 128, 128, 0.398);
+}
+
 .weather-input{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.weather-check-btn{
+.weather-check-btn:enabled{
     margin-top: 40px;
     padding:20px;
     font-size: 20px;
@@ -86,9 +98,38 @@ select{
     background-color: rgb(0, 0, 255);
 }
 
-.weather-check-btn:hover{
-    color: black;
+.weather-check-btn:disabled{
+    margin-top: 40px;
+    padding:20px;
+    font-size: 20px;
+    background-color: white(114, 142, 143, 0.731);
+    border-style: none;
+    border-radius: 10px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.202);
+    background-color: rgba(115, 115, 220, 0.089);
 }
+
+.weather-check-btn:enabled:hover{
+    transform: translateY(5px)scale(1.02);
+}
+
+.check-new-location-btn{
+    padding:20px;
+    font-size: 20px;
+    background-color: white(114, 142, 143, 0.731);
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 0, 255);
+    margin-bottom: 50px;
+}
+
+.check-new-location-btn:hover{
+    transform: translateY(5px)scale(1.02);
+}
+
 
 .main-desc{
     text-align: center;
@@ -139,19 +180,20 @@ select{
 }
 
 .humidity-display,.wind-display, .feels-like-display{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     margin-top: 25px;
     color: white;
     background-color: rgba(0, 0, 0, 0.143);
-    width:60px;
     padding: 20px;
     border: 2px solid white;
     border-radius: 10px;
-    text-align: center;
+    align-items: center;
 }
 
 .humidity-value, .windspeed-value, .feels-like-value{
     margin-top: 10px;
-    margin-bottom: 30px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -170,8 +212,7 @@ select{
 .day-forecast{
     background-color: rgba(0, 0, 0, 0.172);
     color: white;
-    padding: 40px;
-    height: 80px;
+    padding: 25px;
     border: 2px solid white;
     border-radius: 10px;
     font-size: 20px;
@@ -179,6 +220,7 @@ select{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    align-items: center;
 }
 
 .date{
@@ -191,20 +233,18 @@ select{
 }
 
 .api--credit{
-    color: rgba(17, 13, 229, 0.774);
-    text-align: center;
-    margin-top: 100px;
+    color: rgba(255, 255, 255, 0.309);
+    margin-top: auto;
     font-size: 15px;
+
 }
 
-.errorMsg{
+.day-emoji{
+    width:80px;
+}
+
+.loading-text{
     color: white;
     text-align: center;
     font-size: 2rem;
-    padding: 20px;
-    width: 60%;
-    margin-left: 160px;
-    border: 5px dashed blue;
-    border-radius: 10px;
-
 }
