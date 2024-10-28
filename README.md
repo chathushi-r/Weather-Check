@@ -1,5 +1,5 @@
 
-A weather app that provides users with weather forecast details for their selected locations. This app features a simple interface that allows users to quickly find weather information.
+A weather app that provides users with the current weather conditions and forecasts for their selected locations. This app features a simple interface that allows users to quickly find weather information.
 
 Project Status: Main functionality is completed. Currently, adding more features such as providing a hourly forecast for each day of the 3-day forecast.
 
