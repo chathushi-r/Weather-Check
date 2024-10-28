@@ -161,75 +161,120 @@ select:disabled{
     height: 100%;
 }
 
-.city-name,.temp, .weather-desc{
-    padding-top: 25px;
-    font-size: 2rem;
+.city-desc-container{
+    display: flex;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 40px;
+    align-items: center;
     color: white;
+}
+
+.city-name{
+    font-size: 2rem;
+}
+
+.temp{
+    font-size: 3rem;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.weather-desc{
+    font-size: 1rem;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.524);
+    padding-left: 22px;
+    margin-bottom: 100px;
 }
 
 .weather-emoji{
-    font-size: 4rem;
-    color: rgba(255, 157, 0, 0.85);
+    margin-left: 20px;
+
 }
 
 .other-details-display{
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 0 auto;
+    width: 95%;
+    border-radius: 15px;
+    background-color: rgba(94, 93, 93, 0.274);
 }
 
-.humidity-display,.wind-display, .feels-like-display{
+.weather-parameters-display{
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-top: 25px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.143);
-    padding: 20px;
-    border: 2px solid white;
-    border-radius: 10px;
-    align-items: center;
+    padding: 15px;
+    align-content: flex-start;
+    text-align: left;
+
 }
 
-.humidity-value, .windspeed-value, .feels-like-value{
-    margin-top: 10px;
-    font-size: 20px;
+.parameter-heading-container{
+    display: flex;
+    gap: 10px;
+    align-items: center
+}
+
+.parameter-value{
+    font-size: 30px;
     font-weight: bold;
+    justify-content: left;
+    padding-left: 35px;
 }
 
 .other-label{
-    font-size: 12px;
+    font-size: 15px;
+}
+
+.parameter-icon{
+    font-size: 30px;
+    color: rgba(5, 5, 255, 0.941);
 }
 
 .show-forecast-display{
     display: flex;
     gap: 20px;
     justify-content: center;
-    padding-top: 25px;
+    background-color: rgba(94, 93, 93, 0.274);
+    width: 91%;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 15px;
 }
 
 .day-forecast{
-    background-color: rgba(0, 0, 0, 0.172);
     color: white;
-    padding: 25px;
-    border: 2px solid white;
-    border-radius: 10px;
+    padding: 10px;
     font-size: 20px;
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 8px;
     align-items: center;
+    cursor: pointer;
+}
+
+.day-forecast:hover{
+    background-color: rgba(94, 94, 104, 0.472);
+    border-radius: 15px;
 }
 
 .date{
     margin:0;
 }
 
+
 .line-break{
     width: 90%;
-    margin-left: 44px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 
 .api--credit{
