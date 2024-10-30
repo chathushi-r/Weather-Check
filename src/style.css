@@ -9,20 +9,16 @@ body{
 
 .navbar{
     display: flex;
-    padding-top: 20px;   
-    padding-left: 15px;
+    padding: 20px 0px 0px 15px;
     width: 98.6%;
     color: blue;
     background-color: black;
 }
 
-.navbar-menu{
-    display: flex;
-    gap: 25px;
-    list-style: none;
+.navbar-date{
     padding: 10px;
-    margin-left: auto;
-    margin-right: 20px;
+    margin: 0px 50px 0px auto;
+    font-size: 1rem;
 }   
 
 .main{
@@ -42,7 +38,7 @@ body{
     padding: 40px;
     flex: 1;
     height: 76vh;
-    background: linear-gradient(rgba(22, 20, 20, 0.494) 20%, rgba(128, 128, 128, 0.448) 70%);
+    background: linear-gradient(rgba(22, 20, 20, 0.494) 20%, rgba(75, 74, 74, 0.448) 70%);
     border-radius: 20px;
     text-align: center;
 }
@@ -50,7 +46,7 @@ body{
 .weather-display-card{
     flex: 1.5;
     align-content: center;
-    background: linear-gradient(rgba(22, 20, 20, 0.494) 30%, rgba(128, 128, 128, 0.448) 70%);
+    background: black;
     margin-left: 20px;
     border-radius: 20px;
 }
@@ -134,8 +130,7 @@ select:disabled{
 .main-desc{
     text-align: center;
     padding:20px ;
-    margin-bottom: 30px;
-    margin-left: 60px;
+    margin: 0px 0px 30px 60px;
     width: 80%;
     font-size: 4rem;
     color: white;
@@ -148,8 +143,7 @@ select:disabled{
 }
 
 .weather-form{
-    margin-top:10% ;
-    margin-left: 10px;
+    margin: 10% 0px 0px 10px;
     padding: 40px;
     text-align: center;
     width: 80%;
@@ -164,20 +158,18 @@ select:disabled{
 .city-desc-container{
     display: flex;
     text-align: left;
-    padding-left: 20px;
-    padding-top: 40px;
+    padding: 40px 0px 0px 20px; 
     align-items: center;
     color: white;
 }
 
 .city-name{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .temp{
     font-size: 3rem;
-    margin-left: auto;
-    margin-right: 40px;
+    margin: 0px 40px 0px auto;
 }
 
 .weather-desc{
@@ -199,9 +191,10 @@ select:disabled{
     grid-template-rows: auto auto;
     justify-content: center;
     margin: 0 auto;
-    width: 95%;
+    width: 92%;
     border-radius: 15px;
-    background-color: rgba(94, 93, 93, 0.274);
+    background-color: rgba(58, 57, 57, 0.247);
+    padding: 5px 20px 5px 20px;
 }
 
 .weather-parameters-display{
@@ -229,6 +222,7 @@ select:disabled{
 
 .other-label{
     font-size: 15px;
+    color: rgba(255, 255, 255, 0.454);
 }
 
 .parameter-icon{
@@ -238,12 +232,12 @@ select:disabled{
 
 .show-forecast-display{
     display: flex;
-    gap: 20px;
+    gap: 40px;
     justify-content: center;
-    background-color: rgba(94, 93, 93, 0.274);
+    background-color:  rgba(58, 57, 57, 0.247);
     width: 91%;
     margin: 0 auto;
-    padding: 15px;
+    padding: 18px 15px 18px 15px;
     border-radius: 15px;
 }
 
@@ -260,7 +254,7 @@ select:disabled{
 }
 
 .day-forecast:hover{
-    background-color: rgba(94, 94, 104, 0.472);
+    background: linear-gradient(to bottom, #22222480, #000000);
     border-radius: 15px;
 }
 
@@ -272,9 +266,7 @@ select:disabled{
 .line-break{
     width: 90%;
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
+    margin: 20px 0px 20px 0px;
 }
 
 .api--credit{
@@ -288,8 +280,81 @@ select:disabled{
     width:80px;
 }
 
-.loading-text{
+.error-text{
     color: white;
     text-align: center;
     font-size: 2rem;
+}
+
+.forecast-container{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.forecast-heading-container{
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 5px 25px 10px 25px;
+}
+
+
+.forecast-heading{
+    font-size: 1.6rem;
+}
+
+.go-back-btn{
+    padding:10px;
+    width: 15%;
+    font-size: 15px;
+    border-style:none ;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 0, 255);
+    margin-left: auto;
+}
+
+.go-back-btn:hover{
+    border: 2px solid rgba(255, 255, 255, 0.271);
+    transform: scale(1.02);
+}
+
+.hour-container{
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 18px 25px;
+}
+
+.per-hour-container{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: rgba(0, 0, 0, 0.428);
+    padding: 3px 15px 2px 15px;
+    border-radius: 10px;
+}
+
+.hour-icon{
+    width: 50px;
+}
+
+.hour-card-container{
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.forecast-line-break{
+    margin-left: 25px;
+    width: 120px;
+    border: 2px solid blue;
+}
+
+.back-icon{
+    color: white;
+    padding-right: 10px;
 }
