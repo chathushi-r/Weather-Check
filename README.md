@@ -1,7 +1,8 @@
 
 A web application that provides users with the current weather conditions and forecasts for their selected locations. This app features a simple interface that allows users to quickly find weather information.
 
-**Project Status:** The project is fully functional. Displays current weather conditions, 3-day forecast and hourly forecast for a selected location. (Styling and layout is currently being refined to enhance responsiveness for different screen sizes.)
+**Project Status:** The project is fully functional. Displays current weather conditions, 3-day forecast and hourly forecast for a selected location. 
+**What is left to do**: Styling and layout is currently being refined to enhance responsiveness for different screen sizes. Also, need to update the list of countries.
 
 **Features:**
 - Weather Data Retrieval : Connected to the weather api that will fetch weather data for a specific location.
