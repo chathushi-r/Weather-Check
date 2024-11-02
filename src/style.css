@@ -7,10 +7,10 @@ body{
     background-color: black;
 }
 
+
 .navbar{
     display: flex;
     padding: 20px 0px 0px 15px;
-    width: 98.6%;
     color: blue;
     background-color: black;
 }
@@ -126,7 +126,6 @@ select:disabled{
     transform: translateY(5px)scale(1.02);
 }
 
-
 .main-desc{
     text-align: center;
     padding:20px ;
@@ -143,7 +142,7 @@ select:disabled{
 }
 
 .weather-form{
-    margin: 10% 0px 0px 10px;
+    margin: 10px 0px 0px 10px;
     padding: 40px;
     text-align: center;
     width: 80%;
@@ -190,8 +189,8 @@ select:disabled{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     justify-content: center;
-    margin: 0 auto;
-    width: 92%;
+    margin: 20px auto 0px auto;
+    width: 90%;
     border-radius: 15px;
     background-color: rgba(58, 57, 57, 0.247);
     padding: 5px 20px 5px 20px;
@@ -202,9 +201,7 @@ select:disabled{
     flex-direction: column;
     color: white;
     padding: 15px;
-    align-content: flex-start;
     text-align: left;
-
 }
 
 .parameter-heading-container{
@@ -236,7 +233,7 @@ select:disabled{
     justify-content: center;
     background-color:  rgba(58, 57, 57, 0.247);
     width: 91%;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     padding: 18px 15px 18px 15px;
     border-radius: 15px;
 }
@@ -266,14 +263,12 @@ select:disabled{
 .line-break{
     width: 90%;
     margin: 0 auto;
-    margin: 20px 0px 20px 0px;
 }
 
 .api--credit{
     color: rgba(255, 255, 255, 0.309);
     margin-top: auto;
     font-size: 15px;
-
 }
 
 .day-emoji{
@@ -290,6 +285,7 @@ select:disabled{
     display: flex;
     flex-direction: column;
     height: 80vh;
+    width: 100%;
 }
 
 .forecast-heading-container{
@@ -299,21 +295,19 @@ select:disabled{
     padding: 5px 25px 10px 25px;
 }
 
-
 .forecast-heading{
     font-size: 1.6rem;
 }
 
 .go-back-btn{
     padding:10px;
-    width: 15%;
     font-size: 15px;
     border-style:none ;
     border-radius: 10px;
     cursor: pointer;
     color: white;
     background-color: rgb(0, 0, 255);
-    margin-left: auto;
+    margin: 0px 25px 0px auto;
 }
 
 .go-back-btn:hover{
@@ -326,7 +320,7 @@ select:disabled{
     font-size: 1rem;
     display: flex;
     flex-direction: column;
-    padding: 0px 0px 18px 25px;
+    padding: 0px 0px 15px 25px;
 }
 
 .per-hour-container{
@@ -357,4 +351,112 @@ select:disabled{
 .back-icon{
     color: white;
     padding-right: 10px;
+}
+
+
+/*Adjusted style for devices with 780px width*/
+@media (max-width: 780px){
+
+    .navbar, .main{
+        width: 768px;
+    }
+
+    .main-headings{
+        padding-left: 10px;
+        font-size: 0.8rem;
+    }
+
+    .weather-form{
+        margin: 10px 0px 0px 0px;
+        padding: 10px;
+    }
+    
+    .country-city-input{
+        padding: 20px 5px 20px 5px;
+        height: 80vh;
+    }
+
+    .weather-check-btn:enabled{
+        padding:12px;
+        font-size: 16px;
+    }
+
+    .weather-check-btn:disabled{
+        padding:12px;
+        font-size: 16px;
+    }
+
+    .api--credit{
+        font-size: 10px;
+        margin-right: 20px;
+        padding-top: 20px;
+    }
+
+    .navbar-logo{
+        font-size: 1.5rem;
+    }
+
+    .weather-display-card{
+        flex: 3;
+    }
+
+    .check-new-location-btn{
+        padding: 10px 28px 10px 28px;
+        font-size: 15px;
+        margin-right: 15px;
+    }
+    
+    .city-name{
+        font-size: 2rem;
+    }
+
+    .temp{
+        font-size: 2.5rem;
+    }
+
+    .city-desc-container{
+        padding: 10px 0px 0px 20px; 
+    }
+
+    .line-break{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .parameter-value{
+        font-size: 20px;
+    }
+
+    .parameter-icon{
+        font-size: 25px;
+    }
+
+    .hour-card-container{
+        gap: 5px;
+    }
+
+    .per-hour-container{
+        gap: 5px;
+    }
+
+    .hour-container{
+        font-size: 0.8rem;
+        padding: 0px 0px 6px 10px;
+    }
+
+    .forecast-heading-container{
+        padding: 0px 25px 5px 25px;
+    }
+
+    .go-back-btn{
+        padding:10px 8px 10px 8px;
+        width: 20%;
+        font-size: 15px;
+        margin-right: 0px;
+    }
+
+    .day-forecast:hover{
+        border: 2px solid blue;
+    }
+    
 }
