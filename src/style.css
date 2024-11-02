@@ -355,7 +355,7 @@ select:disabled{
 
 
 /*Adjusted style for devices with 780px width*/
-@media (max-width: 780px){
+@media only screen and (max-width: 780px){
 
     .navbar, .main{
         width: 768px;
